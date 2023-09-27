@@ -7,7 +7,7 @@ export function Accordion() {
     const [isAccordionOpen, setIsAccordionOpen] = useState('')
     return (
         <AccordionRadix.Root className="AccordionRoot" type="single" collapsible onValueChange={setIsAccordionOpen}>
-            <AccordionRadix.Item clasName="AccordionItem" value="item-1">
+            <AccordionRadix.Item className="AccordionItem" value="item-1">
                 <AccordionRadix.Trigger asChild>
                     <div className="flex gap-5 cursor-pointer">
                         <h3 className="text-md font-bold font-sans text-purple-900">
