@@ -37,8 +37,7 @@ export default function AboutMe() {
                             <div className="relative bottom-5">
                                 <h2 className="font-semibold text-lg font-sans"> Eu </h2>
                                 <p className="text-sm">
-                                    Eu sou uma pessoa muito dedicada e com facil aprendizado e busco conhecimentos constantes na minha jornada e
-                                    evolucao, dado isso estou no 4 semestre de cc
+                                Tenho 19 anos e sou residente em Franca, SP. Minha paixão pela tecnologia foi despertada através da influência de familiares que já atuam nessa área. Desde então, tenho buscado constantemente conhecimento e desenvolvimento para me aprofundar cada vez mais no mundo da tecnologia. Estou sempre em busca de novos desafios e oportunidades para crescer nesse campo em constante evolução.
                                 </p>
                             </div>
                         </div>
@@ -47,8 +46,7 @@ export default function AboutMe() {
                             <div className="relative bottom-5">
                                 <h2 className="font-semibold text-lg font-sans"> Dev Frontend </h2>
                                 <p className="text-sm">
-                                    Eu sou uma pessoa muito dedicada e com facil aprendizado e busco conhecimentos constantes na minha jornada e
-                                    evolucao, dado isso estou no 4 semestre de cc
+                                Minhas habilidades em desenvolvimento frontend incluem HTML5, CSS3 e JavaScript, junto com o uso de tecnologias modernas como TypeScript e React. Tenho experiência em trabalhar com Node.js, Next.js, Git e GitHub para gerenciar o controle de versão de projetos. Além disso, estou familiarizado com frameworks como Express e tecnologias de contêineres como Docker. Meu conhecimento em SQL me permite lidar com bancos de dados, e minha experiência com a biblioteca Tailwind CSS ajuda a criar interfaces atraentes e responsivas.
                                 </p>
                             </div>
                         </div>
@@ -57,8 +55,7 @@ export default function AboutMe() {
                             <div className="relative bottom-5">
                                 <h2 className="font-semibold text-lg font-sans"> Estudante </h2>
                                 <p className="text-sm">
-                                    Eu sou uma pessoa muito dedicada e com facil aprendizado e busco conhecimentos constantes na minha jornada e
-                                    evolucao, dado isso estou no 4 semestre de cc
+                                Sou um estudante de Ciência da Computação no Uni-FACEF, atualmente cursando o 4º semestre. Recentemente, concluí um estágio de três meses, onde tive a oportunidade de me desenvolver e aprender muito sobre o desenvolvimento full stack. Essa experiência me permitiu aplicar meus conhecimentos acadêmicos na prática e me preparou para desafios futuros na área de tecnologia.
                                 </p>
                             </div>
                         </div>
