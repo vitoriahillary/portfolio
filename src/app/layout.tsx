@@ -27,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} ${montserrat.variable} bg-pink-400`}>
+      <body className={`${poppins.className} ${montserrat.variable} bg-pink-100`}>
         <Navbar/> 
         <main className='h-screen px-4 pt-20'>
           {children}

@@ -15,7 +15,8 @@ const TextArea : React.FC<TextAreaProps> = ({
     onChange,
     value,
     label,
-    type
+    type,
+    ...props
 }) =>{
     return(
         <div className="relative w-full">
@@ -40,6 +41,7 @@ const TextArea : React.FC<TextAreaProps> = ({
                 peer
             "
             placeholder=" "
+            {...props}
             />
             <label 
                 className="

@@ -4,18 +4,18 @@ import {ButtonHTMLAttributes} from 'react'
 
 const button = tv({
     base: [
-        'rounded-xl h-12 w-full px-4 py-2 text-sm font-semibold text-black outline-none shadow-sm',
-        'focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-purple-700 transition',
+        'rounded-xl h-12 w-full px-4 py-2 text-sm font-semibold text-slate-800 outline-none shadow-sm',
+        'focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-pink-400 transition',
         'active:opacity-80',
     ],
     variants: {
         variant: {
             ghost:
-            'px-3 hover:bg-zinc-50 shadow-none hover:brightness-90 rounded-full',
+            'px-3 shadow-none hover:opacity-80 rounded-full',
             primary: 
-            'bg-violet-800 text-white hover:bg-violet-700',
+            'bg-pink-400 text-white hover:bg-pink-500',
             outline:
-            'border-2 border border-violet-500 hover:brightness-90 bg-violet-50',
+            'border-2 border border-pink-400 bg-pink-200 hover:bg-pink-100',
         },
     },
     defaultVariants: {

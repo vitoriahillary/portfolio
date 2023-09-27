@@ -6,28 +6,33 @@ import { Menu, X } from 'lucide-react'
 import { useState } from "react";
 import { Button } from "../Button";
 
-export function Navbar(){
+export function Navbar() {
     const router = useRouter()
     const [isNavBarOpen, setisNavBarOpen] = useState(false)
-    return(
-        <div className="fixed w-full z-50 bg-pink-400 flex h-20 px-4 lg:px-12 py-2 shadow-lg">
-            <img src="https://i.pinimg.com/736x/98/7d/2c/987d2c28642e2bd96d577603511e1486.jpg" alt="logo" className="rounded-full h-12 w-12 cursor-pointer" onClick={()=> router.push('/')}/>
+    return (
+        <div className="fixed w-full z-50 bg-pink-200 flex h-20 px-4 lg:px-12 py-2 shadow-lg">
+            <img src="logo.png" alt="logo" className="w-14 h-14 mt-1 rounded-full cursor-pointer" onClick={() => router.push('/')} />
             <div className="flex lg:hidden ml-auto items-center">
                 <Collapsible.Root className='z-20' onOpenChange={setisNavBarOpen}>
-                <Collapsible.Trigger asChild>
-                    <Button variant="ghost">
-                    {(!isNavBarOpen) ? <Menu/> : <X />}
-                    </Button>                        
-                </Collapsible.Trigger>
-                <Collapsible.Content forceMount asChild className='fixed top-16 right-1 px-10 shadow-lg border border-zinc-200 data-[state=closed]:hidden data-[state=closed]:animate-slideUpAndFade data-[state=open]:animate-slideDownAndFade'>
-                    <div className="flex flex-1 flex-col gap-6 bg-pink-50 h-[90%] w-80">
-                        <Tabs/>
-                    </div>
-                </Collapsible.Content>
+                    <Collapsible.Trigger asChild>
+                        <Button variant="ghost" className="z-50">
+                            {(!isNavBarOpen) ? <Menu /> : <X />}
+                        </Button>
+                    </Collapsible.Trigger>
+                    <Collapsible.Content forceMount asChild className='absolute top-0 right-0 pl-10 shadow-lg border border-zinc-200 data-[state=closed]:hidden data-[state=closed]:animate-slideUpAndFade data-[state=open]:animate-slideDownAndFade'>
+                        <div className="flex flex-1 flex-col bg-pink-50 h-screen w-80">
+                            <Collapsible.Trigger asChild>
+                                <Button variant="ghost" className="w-12 ml-auto mt-4 mr-4">
+                                    {(!isNavBarOpen) ? <Menu /> : <X />}
+                                </Button>
+                            </Collapsible.Trigger>
+                            <Tabs />
+                        </div>
+                    </Collapsible.Content>
                 </Collapsible.Root>
             </div>
             <div className="hidden lg:flex ml-auto">
-                <Tabs/>
+                <Tabs />
             </div>
         </div>
     )
